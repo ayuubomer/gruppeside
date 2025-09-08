@@ -11,7 +11,7 @@
 </head>
 <body class="font-sans text-gray-800">
   <!-- Navbar -->
-  <nav class="flex justify-between items-center bg-gray-900 text-white px-6 py-4 sticky top-0">
+  <!-- <nav class="flex justify-between items-center bg-gray-900 text-white px-6 py-4 sticky top-0">
     <div class="container flex justify-between items-center bg-gray-900 text-white px-6 py-4 sticky top-0 mx-auto">
         <div class="text-xl font-bold">Gruppe 19</div>
         <ul class="flex space-x-6">
@@ -23,7 +23,41 @@
        
         </ul>
     </div>
-  </nav>
+  </nav> -->
+
+
+  <!-- Navbar -->
+    <nav class="bg-gray-900 text-white sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center px-6 py-4">
+        <!-- Logo -->
+        <div class="text-xl font-bold">Gruppe 19</div>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex space-x-6">
+            <li><a href="#home" class="hover:text-yellow-400">Hjem</a></li>
+            <li><a href="#about" class="hover:text-yellow-400">Hvorfor oss?</a></li>
+            <li><a href="#members" class="hover:text-yellow-400">Om oss</a></li>
+            <li><a href="#forventninger" class="hover:text-yellow-400">Forventninger</a></li>
+            <li><a href="#contact" class="hover:text-yellow-400">Kontakt oss!</a></li>
+        </ul>
+
+        <!-- Mobile Hamburger -->
+        <button id="menu-btn" class="md:hidden text-2xl focus:outline-none">
+            <i class="fas fa-bars"></i>
+        </button>
+        </div>
+
+        <!-- Mobile Menu (hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800">
+        <ul class="flex flex-col items-center space-y-4 py-4">
+            <li><a href="#home" class="hover:text-yellow-400">Hjem</a></li>
+            <li><a href="#about" class="hover:text-yellow-400">Hvorfor oss?</a></li>
+            <li><a href="#members" class="hover:text-yellow-400">Om oss</a></li>
+            <li><a href="#forventninger" class="hover:text-yellow-400">Forventninger</a></li>
+            <li><a href="#contact" class="hover:text-yellow-400">Kontakt oss!</a></li>
+        </ul>
+        </div>
+    </nav>
 
   <!-- Hero Section -->
   <section id="home" class="h-[70vh] bg-cover bg-center flex flex-col items-center justify-center text-white text-center" style="background-image: url('https://picsum.photos/1200/600');">
@@ -45,14 +79,14 @@
     <div class="flex flex-col space-y-8 max-w-4xl mx-auto">
       
      <!-- Member 1 -->
-<div class="bg-white p-6 rounded-2xl shadow-lg flex">
-  <!-- Left side -->
+<!-- <div class="bg-white p-6 rounded-2xl shadow-lg flex">
+  <!-- Left side --
   <div class="flex flex-col items-center">
   <img src="./images/ahmed.jpg" alt="Ahmed Anwar" class="w-36 h-36 rounded-full object-cover shadow-md">
   <h3 class="text-xl font-semibold mt-3">Ahmed Anwar</h3>
   <p class="text-gray-500 text-sm">Student | Gruppeleder</p>
 
-  <!-- Social icons stacked vertically -->
+  <!-- Social icons stacked vertically --
   <div class="flex flex-col items-center mt-4 space-y-4">
     <a href="https://www.linkedin.com/in/ahmed-anwar-6352a833b/" 
        class="text-gray-800 hover:text-blue-600 text-6xl">
@@ -65,7 +99,7 @@
   </div>
 </div>
 
-  <!-- Right side -->
+  <!-- Right side --
   <div class="ml-12 flex-1">
     <h3 class="text-xl font-semibold mt-2">Ahmed Anwar</h3>
     <p class="text-gray-600">
@@ -87,10 +121,58 @@
       </a>
     </p>
   </div>
-</div>
+</div> -->
 
 
-<div class="bg-white p-6 rounded-2xl shadow-lg flex">
+<div class="bg-white p-6 rounded-2xl shadow-lg flex flex-col md:flex-row items-center md:items-start">
+    <!-- Left side -->
+    <div class="flex flex-col items-center md:items-center ">
+      <img src="./images/ahmed.jpg" alt="Ahmed Anwar" 
+           class="w-32 h-32 md:w-36 md:h-36 rounded-full object-cover shadow-md">
+      <h3 class="text-xl font-semibold mt-3">Ahmed Anwar</h3>
+      <p class="text-gray-500 text-sm">Student | Gruppeleder</p>
+  
+      <!-- Social icons stacked vertically on desktop, inline on mobile -->
+      <div class="flex flex-row md:flex-col items-center mt-4 space-x-6 md:space-x-0 md:space-y-4">
+        <a href="https://www.linkedin.com/in/ahmed-anwar-6352a833b/" 
+           class="text-gray-800 hover:text-blue-600 text-4xl md:text-6xl">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/ahmedanwar2" target="_blank" 
+           class="text-gray-800 hover:text-black text-4xl md:text-6xl">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+  
+    <!-- Right side -->
+    <div class="mt-6 md:mt-0 md:ml-12 flex-1 text-center md:text-left">
+      <h3 class="text-xl font-semibold">Ahmed Anwar</h3>
+      <p class="text-gray-600 mt-2">
+        er en engasjert IT og Informasjonssytemer student på 21 år fra Kristiansand, med en stor interesse for cybersikkerhet, utvikling og prosjektstyring. Gjennom sitt bachelorstudium ved Universitetet i Agder har han opparbeidet seg solid kompetanse innen systemutvikling, databaser og sikkerhet, og han er kjent for sin struktur, samarbeidsevne og problemløsende tilnærming. Hans kombinasjon av teknisk innsikt, analytisk tenkning og evne til å kommunisere godt gjør ham til en verdifull ressurs i prosjekter som krever både teknisk kompetanse og forståelse for brukerbehov. Gjennom høsten 2025 jobber Ahmed hos Tingtun, hvor han får verdifull praktisk erfaring og videreutvikler hans kompentanse.
+      </p>
+  
+      <h3 class="text-xl font-semibold mt-4">Relevante IT-kompetanseområder:</h3>
+      <ul class="list-disc list-inside text-gray-600 text-left inline-block md:block">
+        <li><strong>Frontend-utvikling:</strong> HTML, CSS, Tailwind, Bootstrap, REACT, JavaScript</li>
+        <li><strong>Backend-utvikling:</strong> C#, Java, Python</li>
+        <li><strong>Database-utvikling:</strong> MySQL, MariaDB</li>
+        <li><strong>Utvikler-verktøy:</strong> Docker, Git, Agile/Scrum Methodology</li>
+      </ul>
+  
+      <p class="text-gray-600 mt-4">
+        Ahmed er praksisstudent hos Tingtun, for mer informasjon besøk – 
+        <a href="https://praksis2025.vercel.app/" target="_blank" 
+           class="text-blue-600 hover:underline">
+          https://praksis2025.vercel.app/
+        </a>
+      </p>
+    </div>
+  </div>
+  
+
+
+<div class="bg-white p-6 rounded-2xl shadow-lg flex flex-col md:flex-row items-center md:items-start">
     <!-- Left side -->
     <div class="flex flex-col items-center">
     <img src="./images/IMG_0504.jpg" alt="Ahmed Anwar" class="w-36 h-36 rounded-full object-cover shadow-md">
@@ -111,7 +193,7 @@
   </div>
   
     <!-- Right side -->
-    <div class="ml-12 flex-1">
+    <div class="mt-6 md:mt-0 md:ml-12 flex-1 text-center md:text-left">
       <h3 class="text-xl font-semibold mt-2">Ayub O. Aden</h3>
       <p class="text-gray-600">
         er en engasjert IT og Informasjonssytemer student på 21 år, med en stor interesse for koding, probelmløsing og prosjekter.
@@ -130,7 +212,7 @@
   
     </div>
   </div>
-      <div class="bg-white p-6 rounded-2xl shadow-lg flex ">
+      <div class="bg-white p-6 rounded-2xl shadow-lg flex flex-col md:flex-row items-center md:items-start">
         <div class="flex flex-col items-center">
             <img src="images/hawler.jpg" alt="Hawler" class="w-36 h-36 rounded-full object-cover object-center">
             <h3 class="text-xl font-semibold mt-3">Hawler A. Mohammed</h3>
@@ -149,7 +231,7 @@
             </div>
         </div>
 
-        <div class="ml-12 flex-1">
+        <div class="mt-6 md:mt-0 md:ml-12 flex-1 text-center md:text-left">
           <h3 class="text-xl font-semibold mt-2">Hawler A. Mohammed</h3>
           <p class="text-gray-600">
             Er en engasjert og positiv 21 år gammmel student i IT og Informasjonssystemer, med svært stor interesse for UX/UI design, systemutvikling, programmering og cybersikkerhet.
@@ -177,7 +259,7 @@
         </div>
       </div>
 
-            <div class="bg-white p-6 rounded-2xl shadow-lg flex ">
+            <div class="bg-white p-6 rounded-2xl shadow-lg flex flex-col md:flex-row items-center md:items-start">
         <div class="flex flex-col items-center">
             <img src="./images/Hashmat2.jpeg" alt="Hashmatullah Botoon" class="w-36 h-36 rounded-full object-cover object-center">
             <h3 class="text-xl font-semibold mt-3">Hashmatullah Botoon</h3>
@@ -196,7 +278,7 @@
             </div>
         </div>
 
-        <div class="ml-12 flex-1">
+        <div class="mt-6 md:mt-0 md:ml-12 flex-1 text-center md:text-left">
           <h3 class="text-xl font-semibold mt-2">Hashmatullah Botoon</h3>
           <p class="text-gray-600">Er en 23 år gammel student innen IT og Informasjonssystemer ved Universitetet i Agder (UiA), med en stor interesse for utvikling, cybersikkerhet og prosjektarbeid. 
             Han har erfaring fra flere prosjekter, blant annet i samarbeid med Kartverket og DIGIN, hvor han bidro med både teknisk kompetanse og strukturert prosjektgjennomføring.</p>
@@ -249,5 +331,14 @@
     <p>&copy; 2025 - Gruppe 19 </p>
     <p> Ahmed Anwar, Hawler Abdullah Mohammed, Hashmatullah Botoon, Ayub Omar Aden</p>
   </footer>
+
+  <script>
+    const btn = document.getElementById("menu-btn");
+    const menu = document.getElementById("mobile-menu");
+  
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
 </body>
 </html>
