@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Group Website</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="font-sans text-gray-800">
+
+
+  <!-- Navbar -->
+  <nav class="bg-gray-900 text-white sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center px-6 py-4">
+      <!-- Logo -->
+      <div class="text-xl font-bold">Gruppe 19</div>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="#home" class="hover:text-yellow-400">Hjem</a></li>
+        <li><a href="#about" class="hover:text-yellow-400">Hvorfor oss?</a></li>
+        <li><a href="#members" class="hover:text-yellow-400">Om oss</a></li>
+        <li><a href="#forventninger" class="hover:text-yellow-400">Forventninger</a></li>
+        <li><a href="#prosjekter" class="hover:text-yellow-400">Prosjekter</a></li>
+        <li><a href="#contact" class="hover:text-yellow-400">Kontakt oss!</a></li>
+        <li><a href="#video" class="hover:text-yellow-400">Promo Video</a></li>
+      </ul>
+
+      <!-- Mobile Hamburger -->
+      <button id="menu-btn" class="md:hidden text-2xl focus:outline-none">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu (hidden by default) -->
+    <div id="mobile-menu" class="hidden md:hidden bg-gray-800">
+      <ul class="flex flex-col items-center space-y-4 py-4">
+        <li><a href="#home" class="hover:text-yellow-400">Hjem</a></li>
+        <li><a href="#about" class="hover:text-yellow-400">Hvorfor oss?</a></li>
+        <li><a href="#members" class="hover:text-yellow-400">Om oss</a></li>
+        <li><a href="#forventninger" class="hover:text-yellow-400">Forventninger</a></li>
+        <li><a href="#prosjekter" class="hover:text-yellow-400">Prosjekter</a></li>
+        <li><a href="#contact" class="hover:text-yellow-400">Kontakt oss!</a></li>
+        <li><a href="#video" class="hover:text-yellow-400">Promo video!</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home"
+    class="h-[70vh] bg-cover bg-center flex flex-col items-center justify-center text-black text-center"
+    style="background-image: url('./images/gruppe.jpg');">
+    <h1 class="text-4xl md:text-6xl font-bold">Hei oppdragsgiver!</h1>
+    <p class="mt-4 text-lg md:text-xl">Velkommen til Gruppe 19</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 px-6 text-center">
+    <h2 class="text-3xl font-bold mb-6">Hvorfor oss?</h2>
+    <p class="max-w-2xl mx-auto">
+      Vi er et team på 4 IT-studenter som har valgt å samarbeide om bacheloroppgaven. Vi er alle godt kjent med
+      hverandre og har jobbet som en gruppe før, noe som har ført til interessante prosjekter, godt samarbeid og gode
+      karakterer. Vi ønsker å utvikle innovative og verdiskapende løsninger med høy kvalitet, der vi legger vekt på
+      solid prosjektgjennomføring, tydelig kommunikasjon og et godt samarbeid med dere.
+    </p>
+  </section>
+
+  <!-- Members Section -->
+  <section id="members" class="py-16 px-6 bg-gray-100">
+    <h2 class="text-3xl font-bold text-center mb-10">Gruppemedlemmer</h2>
+    <div class="flex flex-col space-y-8 max-w-4xl mx-auto">
+
+      <div class="bg-white p-6 rounded-2xl shadow-lg flex flex-col md:flex-row items-center md:items-start">
+        <!-- Left side -->
+        <div class="flex flex-col items-center md:items-center ">
+          <img src="./images/ahmed.jpg" alt="Ahmed Anwar"
+            class="w-32 h-32 md:w-36 md:h-36 rounded-full object-cover shadow-md">
+          <h3 class="text-xl font-semibold mt-3">Ahmed Anwar</h3>
+          <p class="text-gray-500 text-sm">Prosjektleder | Frontend-utvikler</p>
+
+          <!-- Social icons stacked vertically on desktop, inline on mobile -->
+          <div class="flex flex-row md:flex-col items-center mt-4 space-x-6 md:space-x-0 md:space-y-4">
+            <a href="https://www.linkedin.com/in/ahmed-anwar-6352a833b/"
+              class="text-gray-800 hover:text-blue-600 text-4xl md:text-6xl">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/ahmedanwar2" target="_blank"
+              class="text-gray-800 hover:text-black text-4xl md:text-6xl">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right side -->
+        <div class="mt-6 md:mt-0 md:ml-12 flex-1 text-center md:text-left">
+          <h3 class="text-xl font-semibold">Ahmed Anwar</h3>
+          <p class="text-gray-600 mt-2">
+            er en engasjert IT og Informasjonssytemer student på 21 år fra Kristiansand, med en stor interesse for
+            cybersikkerhet, utvikling og prosjektstyring. Gjennom sitt bachelorstudium ved Universitetet i Agder har han
+            opparbeidet seg solid kompetanse innen systemutvikling, databaser og sikkerhet, og han er kjent for sin
+            struktur, samarbeidsevne og problemløsende tilnærming. Hans kombinasjon av teknisk innsikt, analytisk
+            tenkning og evne til å kommunisere godt gjør ham til en verdifull ressurs i prosjekter som krever både
+            teknisk kompetanse og forståelse for brukerbehov. Gjennom høsten 2025 jobber Ahmed hos Tingtun, hvor han får
+            verdifull praktisk erfaring og videreutvikler hans kompentanse.
+          </p>
+
+          <h3 class="text-xl font-semibold mt-4">Relevante IT-kompetanseområder:</h3>
+          <ul class="list-disc list-inside text-gray-600 text-left inline-block md:block">
+            <li><strong>Frontend-utvikling:</strong> HTML, CSS, Tailwind, Bootstrap, REACT, JavaScript</li>
+            <li><strong>Backend-utvikling:</strong> C#, Java, Python</li>
+            <li><strong>Database-utvikling:</strong> MySQL, MariaDB</li>
+            <li><strong>Utvikler-verktøy:</strong> Docker, Git, Agile/Scrum Methodology</li>
+          </ul>
+
+          <p class="text-gray-600 mt-4">
+            Ahmed er praksisstudent hos Tingtun, for mer informasjon besøk –
+            <a href="https://praksis2025.vercel.app/" target="_blank" class="text-blue-600 hover:underline">
+              https://praksis2025.vercel.app/
+            </a>
+          </p>
+        </div>
+      </div>
+
+
+
+      <div class="bg-white p-6 rounded-2xl shadow-lg flex flex-col md:flex-row items-center md:items-start">
+        <!-- Left side -->
+        <div class="flex flex-col items-center">
+          <img src="./images/IMG_0504.jpg" alt="Ahmed Anwar" class="w-36 h-36 rounded-full object-cover shadow-md">
+          <h3 class="text-xl font-semibold mt-3">Ayub O. Aden</h3>
+          <p class="text-gray-500 text-sm">Student | Fullstack-utvikler</p>
+
+          <!-- Social icons stacked vertically -->
+          <div class="flex flex-col items-center mt-4 space-y-4">
+            <a href="https://no.linkedin.com/in/ayub-omar-920472195/"
+              class="text-gray-800 hover:text-blue-600 text-6xl">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/ayuubomer/" target="_blank" class="text-gray-800 hover:text-black text-6xl">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right side -->
+        <div class="mt-6 md:mt-0 md:ml-12 flex-1 text-center md:text-left">
+          <h3 class="text-xl font-semibold mt-2">Ayub O. Aden</h3>
+          <p class="text-gray-600">
+            er en engasjert IT og Informasjonssytemer student på 21 år, med en stor interesse for koding, probelmløsing
+            og prosjekter.
+            Gjennom bachelorstudiet ved Universitetet i Agder har han bygget opp solid kompetanse innen systemutvikling,
+            design og sikkerhet.
+            Han er kjent for å være hardtarbeidende, målrettet og opptatt av å finne gode løsninger på utfordringer.
+            Med en kombinasjon av teknisk innsikt, analytisk tenkning og evnen til å samarbeide og kommunisere godt,
+            bidrar han aktivt til å skape resultater i prosjekter som krever både teknisk kompetanse og forståelse for
+            brukerbehov.
+          </p>
+
+          <h3 class="text-xl font-semibold mt-4">Relevante IT-kompetanseområder:</h3>
+          <ul class="list-disc list-inside text-gray-600">
+            <li><strong>Frontend-utvikling:</strong> HTML, CSS, JavaScript, Bootstrap, REACT, Svetle, Vue, Tailwind</li>
+            <li><strong>Backend-utvikling:</strong> Python, NodeJS, C#, Java</li>
+            <li><strong>Database-utvikling:</strong>MySQL, MariaDB, MongoDB, Firebase, Supabase</li>
+            <li><strong>Utvikler-verktøy:</strong> Docker, Git, Agile/Scrum Methodology</li>
+          </ul>
+
+        </div>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow-lg flex flex-col md:flex-row items-center md:items-start">
+        <div class="flex flex-col items-center">
+          <img src="images/hawler.jpg" alt="Hawler" class="w-36 h-36 rounded-full object-cover object-center">
+          <h3 class="text-xl font-semibold mt-3">Hawler A. Mohammed</h3>
+          <p class="text-gray-500 text-sm">Student | Frontend-utvikler</p>
+
+          <div class="flex flex-col items-center mt-4 space-y-4">
+            <a href="https://www.linkedin.com/in/hawler-abdullah-mohammed-496833380/"
+              class="text-gray-800 hover:text-blue-600 text-6xl">
+              <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a href="" target="_blank" class="text-gray-800 hover:text-black text-6xl">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="mt-6 md:mt-0 md:ml-12 flex-1 text-center md:text-left">
+          <h3 class="text-xl font-semibold mt-2">Hawler A. Mohammed</h3>
+          <p class="text-gray-600">
+            Er en engasjert og positiv 21 år gammmel student i IT og Informasjonssystemer, med svært stor interesse for
+            UX/UI design, systemutvikling, programmering og cybersikkerhet.
+            Gjennom bachelorstudiet ved Universitetet i Agder har han tilegnet seg solid kunnskap innen cybersikkerhet,
+            universell utforming av systemer, front-end og back-end systemutvikling, samt UX/UI design.
+            Han er kjent for å være målrettet og ambisiøs, samt ha gode evner til å se sammenhengen mellom tekniske
+            løsninger og design relaterte valg.
+            Med denne kombinasjonen av kompetanse, har han bidratt til å realisere tekniske løsninger uten å
+            kompromisere på brukervennlighet, funksjonalitet eller kvalitet.
+          </p>
+          <h3 class="text-xl font-semibold mt-4"> Relevante IT-kompetanseområder</h3>
+          <ul class="list-disc list-inside text-gray-600">
+            <li><Strong>Frontend-utvikling:</Strong> HTML, CSS, JavaScript, REACT, Tailwind, Bootstrap</li>
+            <li><Strong>Backend-utvikling:</Strong> C#, Java, Python </li>
+            <li><Strong>Database-utvikling:</Strong> MySQL, MariaDB</li>
+            <li><Strong>Utvikler-verktøy:</Strong> Docker, Git</li>
+            <li><Strong>Annet:</Strong> Linux baserte OS </li>
+          </ul>
+
+          <p class="text-gray-600 mt-4">
+            Hawler er praksisstudent hos Ombygg, for mer informasjon besøk -
+            <a href="https://sites.google.com/view/302-praksis/hjem" target="_blank"
+              class="text-blue-600 hover:underline">
+              https://sites.google.com/view/302-praksis/hjem
+            </a>
+          </p>
+
+
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl shadow-lg flex flex-col md:flex-row items-center md:items-start">
+        <div class="flex flex-col items-center">
+          <img src="./images/Hashmat2.jpeg" alt="Hashmatullah Botoon"
+            class="w-36 h-36 rounded-full object-cover object-center">
+          <h3 class="text-xl font-semibold mt-3">Hashmatullah Botoon</h3>
+          <p class="text-gray-500 text-sm">Student | Fullstack-utvikler</p>
+
+          <div class="flex flex-col items-center mt-4 space-y-4">
+            <a href="https://www.linkedin.com/in/hashmat-botoon-a62838380/"
+              class="text-gray-800 hover:text-blue-600 text-6xl">
+              <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a href="https://github.com/Botoon77" target="_blank" class="text-gray-800 hover:text-black text-6xl">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="mt-6 md:mt-0 md:ml-12 flex-1 text-center md:text-left">
+          <h3 class="text-xl font-semibold mt-2">Hashmatullah Botoon</h3>
+          <p class="text-gray-600">Er en 23 år gammel student innen IT og Informasjonssystemer ved Universitetet i Agder
+            (UiA), med en stor interesse for utvikling, cybersikkerhet og prosjektarbeid.
+            Han har erfaring fra flere prosjekter, blant annet i samarbeid med Kartverket og DIGIN, hvor han bidro med
+            både teknisk kompetanse og strukturert prosjektgjennomføring.</p>
+          <p class="text-gray-600">Med solid faglig kunnskap innen systemutvikling, databaser og universell utforming,
+            samt praktisk erfaring fra gruppearbeid, er han en ressurs som kombinerer teknisk innsikt med forståelse for
+            brukerbehov</p>
+
+          <h3 class="text-xl font-semibold mt-4"> Relevante IT-kompetanseområder</h3>
+          <ul class="list-disc list-inside text-gray-600">
+            <li><Strong>Frontend-utvikling:</Strong> HTML, CSS, JavaScript</li>
+            <li><Strong>Backend-utvikling:</Strong> C#, Java, Python, PHP</li>
+            <li><Strong>Database-utvikling:</Strong> MySQL, MariaDB</li>
+            <li><Strong>Utvikler-verktøy:</Strong> Docker, Git</li>
+          </ul>
+          <p class="text-gray-600 mt-4">
+            Hashmat er praksisstudent hos Kvinesdal Mottak, for mer informasjon besøk -
+            <a href="https://sites.google.com/view/is-302-praksisprosjekt/hjem" target="_blank"
+              class="text-blue-600 hover:underline">
+              https://sites.google.com/view/is-302-praksisprosjekt/hjem
+            </a>
+          </p> 
+
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+
+  <section id="forventninger" class="py-16 px-6 ">
+    <div class="container mx-auto space-y-4">
+      <h1 class="text-4xl font-bold text-center">Forventninger</h1>
+      <p></p>
+
+      <h3 class="text-4xl">Tanker om prosjekt/bedrift</h3>
+      <hr />
+      <p class="text-xl">Teamet har gjennom studiet fått erfaring fra ulike typer prosjekter innen systemutvikling,
+        databaser, programmering, tjenestedesign og brukersentrert utvikling. Med bakgrunn i disse erfaringene ønsker vi
+        å samarbeide med en bedrift som kan tilby en helhetlig utviklingsprosess, hvor vi både får utfordret oss faglig
+        og får anvendt kunnskapen vår i praksis.</p>
+
+      <p class="text-xl">Gruppen har interesser innen sikkerhet, økonomi og webutvikling, samt andre relaterte områder på tvers av ulike sektorer. Dette gjør at vi er åpne og motiverte for å arbeide med et bredt spekter av temaer og oppgaver.</p>
+      
+      <h3 class="text-4xl ">Arbeidsprossesen</h3>
+      <hr />
+      <p class="text-xl">Teamet har et sterkt fokus på kontinuerlig læring og fremdrift i prosjektet. Vi jobber etter
+        Scrum-metodikken, med daglige standups for å sikre jevn progresjon og tydelig kommunikasjon. I tillegg ønsker vi
+        jevnlige møter med oppdragsgiver for å sikre at utviklingen går i riktig retning og er i tråd med
+        forventningene.</p>
+
+    </div>
+
+  </section>
+
+
+  <section id="prosjekter" class="py-16 px-6 bg-gray-50">
+    <div class="container mx-auto space-y-8">
+      <h1 class="text-4xl font-bold text-center">Prosjekter</h1>
+      <p class="text-center text-gray-600 max-w-2xl mx-auto">
+        Et utvalg av prosjekter vi har jobbet med 
+      </p>
+  
+      <!-- Cards Grid -->
+      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+
+        <!-- Project Card -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow">
+          <div class="w-full max-w-3xl mx-auto">
+            <video class="w-full rounded-lg shadow" controls>
+              <source src="./files/ea5a2cc7-9583-420a-836d-82228e41b583.dta" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="p-6 space-y-3">
+            <h2 class="text-xl font-semibold">Prosjekt med Kartverket</h2>
+            <p class="text-gray-600">
+              Prosjektoppgave ved UiA høsten 2024 under emnet 'IS-200 Systemanalyse og systemutvikling' i samarbeid med Kartverket. Prosjektet er et system for innmelding av kartendringer og oppfølging av rapporter. Prosjektet ble organiserte etter SCRUM-metodikk, inkludert sprint-planlegging og oppfølging.
+            </p>
+            <a target="_blank" href="./files/Deliverable 4 Final Report Final Version.pdf" 
+                class="block text-indigo-600 font-medium hover:underline">
+                Les mer →
+             </a>
+            <a target="_blank" href="https://github.com/hawlerzzz/Karverket" 
+               class="block text-indigo-600 font-medium hover:underline">
+              Se Github Repo →
+           </a>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow">
+          <img src="./images/digin.png" alt="Prosjekt 2" class="w-full h-48 object-cover">
+          <div class="p-6 space-y-3">
+            <h2 class="text-xl font-semibold">Prosjekt med Digin</h2>
+            <p class="text-gray-600">
+              Prosjektoppgave ved UiA våren 2025 under emnet 'IS-112 Tjenestedesign & Forretningsmodeller' i samarbeid med Digin. Rapporten utforsker hvordan Digin kan forbedre internt kommunikasjon mellom medlemsbedriftene for å øke verdien som kommer med å være en del av klyngen. Ved bruk av Design Thinking ble det gjennomført intervjuer, analyse av data og utviklingen av en ekslusive kommunikasjonsplattform for medlemsbedriftene.
+            </p>
+            <a target="_blank" href="./files/UiA IS-112 Rapport.pdf" class="inline-block text-indigo-600 font-medium hover:underline">
+              Les mer →
+            </a>
+          </div>
+        </div>
+
+        <!-- Project Card -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow">
+          <img src="./images/cybersecurity.png" alt="Prosjekt 3" class="w-full h-48 object-cover">
+          <div class="p-6 space-y-3">
+            <h2 class="text-xl font-semibold">Cybersikkerhet Rapport</h2>
+            <p class="text-gray-600">
+              Prosjekt ved UiA våren 2025 under emnet 'IS-214 Information Systems Security' i samarbeid med Yussouf & Co – Charted Accountants. Rapporten utforsker og analysere et Ransomware-angrep mot bedriften med fokus på sårbarheter og konsekvenser. 
+            </p>
+            <a target="_blank" href="./files/Individual Creative Writing FINAL.pdf" class="inline-block text-indigo-600 font-medium hover:underline">
+              Les mer →
+            </a>
+          </div>
+        </div>
+  
+        <!-- Project Card -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow">
+          <img src="./images/spill.png" alt="Prosjekt 4" class="w-full h-48 object-cover">
+          <div class="p-6 space-y-3">
+            <h2 class="text-xl font-semibold">Unity Spill</h2>
+            <p class="text-gray-600">
+              Dette er en liten spill lagd med Unity. 
+            </p>
+            <a target="_blank" href="https://ayubomer.github.io/MyFirstGame/" class="inline-block text-indigo-600 font-medium hover:underline">
+              Sjekk ut →
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow">
+          <img src="images/financegraph.jpg" alt="Prosjekt 3" class="w-full h-48 object-cover">
+          <div class="p-6 space-y-3">
+            <h2 class="text-xl font-semibold">Peak Finance</h2>
+            <p class="text-gray-600">
+              Peak Finance er en moderne og brukervennlig webaplikasjon for å holde oversikt over din personlige økonomi. Den gir deg full oversikt over inntekter og kostnader, med visuelle grafer, kategorier og budsjettverktøy.
+            </p>
+            <a target="_blank" href="peakfinance.html" 
+               class="block text-indigo-600 font-medium hover:underline">
+                Les mer →
+            </a>
+            <a target="_blank" href="https://github.com/hawlerzzz/Karverket" 
+              class="block text-indigo-600 font-medium hover:underline">
+              Se Github Repo →
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+      <div id="video" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1124007786?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Promovideo – Laget med Clipchamp"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    </div>
+  </section>
+
+  
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 px-6 text-center">
+    <h2 class="text-3xl font-bold mb-6">Kontakt oss!</h2>
+    <p>Email: <a href="mailto:ahmed04anwar@gmail.com" class="mt-10 text-blue-600 hover:underline">ahmed04anwar@gmail.com</a>
+    </p>
+    <p>Tlf: 938 08 295</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center py-4">
+    <p>&copy; 2025 - Gruppe 19 </p>
+    <p> Ahmed Anwar, Hawler Abdullah Mohammed, Hashmatullah Botoon, Ayub Omar Aden</p>
+  </footer>
+
+  <script>
+    const btn = document.getElementById("menu-btn");
+    const menu = document.getElementById("mobile-menu");
+
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+</body>
+
+</html>
